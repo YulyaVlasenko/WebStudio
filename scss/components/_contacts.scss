@@ -1,0 +1,39 @@
+.contacts__link {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+
+    transition: color 250ms var(--primary-cubic-bezier);
+
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
+
+    &--header {
+            color: var(--color-secondary);
+            line-height: 1.143;
+            letter-spacing: 0.02em;
+            font-weight: 500;
+            @include centredFlex();
+            gap: 10px;
+    }
+    
+    &--footer {
+            line-height: 1.714;
+            letter-spacing: 0.03em;
+    }
+    
+    &--grey {
+            color: var(--color-text-footer);
+    }
+    
+    &--white {
+            color: var(--color-action);
+    }
+    
+}
+
+.contacts__icon {
+    fill: currentColor;
+}

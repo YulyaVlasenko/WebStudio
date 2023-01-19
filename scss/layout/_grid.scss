@@ -1,0 +1,78 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.grid__item {
+    flex-basis: calc((100%/3) - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+
+.grid__link {
+    display: block;
+    text-decoration: none;
+    color: var(--color-primary);
+
+    transition: box-shadow 250ms var(--primary-cubic-bezier);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.grid__control {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid__image {
+    width: 370px;
+}
+
+.grid__overlay {
+    font-size: 18px;
+    line-height: 1.556;
+    letter-spacing: 0.03em;
+    color: var(--color-action);
+    padding: 63px 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    transform: translateY(103%);
+    transition: transform 250ms var(--primary-cubic-bezier);
+
+    .grid__link:hover & {
+        transform: translateY(0);
+    }
+
+    .grid__link:focus & {
+        transform: translateY(0);
+    }
+}
+
+.grid__meta {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.grid__name {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.grid__desc {
+    color: var(--color-secondary);
+    font-size: 18px;
+    line-height: 1.667;
+}

@@ -1,0 +1,60 @@
+@import './base/normalize';
+
+@import './utils/variables';
+@import './base/base';
+@import './base/reset';
+@import './utils/fonts';
+@import './utils/mixin';
+
+/* Global style */
+@import './layout/section';
+@import './layout/container';
+@import './base/list';
+@import './components/button';
+@import './components/overlay';
+@import './layout/backdrop';
+@import './utils/visually-hidden';
+
+/* Header & Footer */
+@import './layout/header';
+@import './layout/footer';
+@import './components/logo';
+@import './components/contacts';
+@import './components/socials';
+@import './components/subscription';
+
+/* Studio */
+@import './layout/hero';
+@import './components/features';
+@import './components/duties';
+@import './components/team';
+@import './components/clients';
+
+/* Portfolio */
+@import './components/filters';
+@import './components/button-filter';
+@import './components/works';
+@import './layout/grid';
+
+
+/* Modal */
+@import './components/modal.scss';
+@import './components/close-button';
+@import './components/form';
+@import './components/form-field';
+@import './components/checkbox';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
