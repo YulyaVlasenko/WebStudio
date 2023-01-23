@@ -4,21 +4,38 @@
     border-bottom: 1px solid #ECECEC;
 }
 
+
 .header__container {
-    @include centredFlex();
+    @media screen and (min-width: $tablet) {
+        @include centredFlex();
+    }
 }
 
 .header__nav {
-    @include centredFlex();
+   
+        @include centredFlex();
+    
 }
 
 .header__site-menu {
-    display: flex;
-    margin-left: 93px;
-
-    & .header__menu-item + .header__menu-item {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-left: 93px;
+    
+        & .header__menu-item+.header__menu-item {
             margin-left: 50px;
         }
+    }
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.header__site-menu {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: 88px;
+    }
 }
 
 .header__menu-link {
@@ -37,7 +54,7 @@
 
     &:hover,
     &:focus {
-            color: var(--color-accent);
+        color: var(--color-accent);
         }
 }
 
@@ -47,20 +64,33 @@
     color: var(--color-accent);
 
     &::after {
-            position: absolute;
-            content: '';
-            background-color: var(--color-accent);
-            height: 4px;
-            width: 100%;
-            border-radius: 4px;
-            bottom: -1px;
-            left: 0;
-        }
+        position: absolute;
+        content: '';
+        background-color: var(--color-accent);
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        bottom: -1px;
+        left: 0;
+    }
 }
 
+
 .header__contacts {
-    display: flex;
+@media screen and (min-width: $tablet) {
     margin-left: auto;
+    }
+
+@media screen and (min-width: $desktop) {
+    display: flex;
     gap: 30px;
+    }
+
+@media screen and (max-width: 767px) {
+    display: none;
 }
+}
+
+
+
 

@@ -2,30 +2,40 @@
 
 .team {
     background-color: var(--background-color-light);
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+    }
 }
 
 .team__list {
     display: flex;
-}
-
-.team .team__item + .team__item {
-    margin-left: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .team__item {
     background-color: var(--background-color-main);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
 
-.team__image {
-    width: 270px;
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px)/2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 90px)/4);
+    }
 }
 
 .team__control {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 30px;
+    }
 }
 
 .team__meta {

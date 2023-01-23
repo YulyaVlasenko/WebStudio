@@ -1,11 +1,16 @@
 /* Clients */
 
 .clients {
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+    }
 }
 
 .clients__list {
-    @include centredFlex();
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -14,8 +19,16 @@
 }
 
 .clients__item {
-    width: 170px;
     height: 92px;
+    flex-basis: calc((100% - 30px)/2);;
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 60px)/3);
+    }
+    
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 150px)/6);
+    }
 }
 
 .clients__link {

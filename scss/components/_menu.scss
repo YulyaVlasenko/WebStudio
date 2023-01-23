@@ -1,0 +1,129 @@
+.mobile-menu {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    &.is-open {
+        display: block;
+    } 
+}
+
+.mobile-menu__button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    transition: fill 250ms var(--primary-cubic-bezier);
+    
+    &:hover,
+    &:focus {
+        fill: var(--color-accent);
+    }
+
+&--open {
+    margin-left: auto;
+    
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+&--close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+}
+
+.mobile-menu__container {
+    padding: 48px 83px 48px 40px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu__item:not(:last-child) {
+     margin-bottom: 32px;
+     display: flex;
+ }
+
+.mobile-menu__link {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--color-primary);
+
+    transition: color 250ms var(--primary-cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            color: var(--color-accent);
+        }
+}
+
+
+.mobile-menu__contacts-list {
+    display: block;
+    margin-bottom: 64px;
+    margin-top: auto;
+}
+
+.mobile-menu__contacts-item {
+    display: block;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-menu__contacts-link--tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: var(--color-accent);
+}
+
+.mobile-menu__contacts-link--email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: var(--color-secondary);
+}
+
+.modal-menu__socials-list {
+    display: flex;
+    gap: 20px;
+    @media screen and (max-width: 425px) {
+      flex-wrap: wrap;
+    }
+}
+
+.modal-menu__socials-item {
+    @media screen and (max-width: 425px) {
+        flex-basis: calc((100% - 20px)/2);
+        }
+}
+
+.modal-menu__socials-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1,222;
+    letter-spacing: 0.02em;
+    color: var(--color-accent);
+}
+
+
+
+

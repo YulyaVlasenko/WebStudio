@@ -1,10 +1,17 @@
 /* Duties */
+.duties {
+    display: none;
 
-.duties__card-set {
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
+}
+
+.duties__list {
     display: flex;
 }
 
-.duties .duty-card + .duty-card {
+.duties .duties__card + .duties__card {
     margin-left: 30px;
 }
 

@@ -1,14 +1,25 @@
 /* Sections */
 
 .section {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
     text-align: center;
-    font-size: 36px;
-    line-height: 1.167;
+    font-size: 28px;
+    line-height: 1.179;
+    margin-bottom: 30px;
     letter-spacing: 0.03em;
     font-weight: 700;
-    margin-bottom: 50px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        line-height: 1.167;
+        margin-bottom: 50px;
+    }
+    
 }

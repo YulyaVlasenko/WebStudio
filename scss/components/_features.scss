@@ -1,21 +1,37 @@
 /* Features */
 
 .features {
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+    }
 }
 
 .features__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+
+.features__card {
+    @media screen and (min-width: $tablet) {
+       flex-basis: calc((100% - 30px)/2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 90px)/4);
+    }
+
 }
 
 .features__title {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.143;
+    margin-bottom: 10px;
     letter-spacing: 0.03em;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .features__meta {

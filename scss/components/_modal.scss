@@ -3,8 +3,8 @@
 .modal {
     width: 100%;
     height: 100%;
-    max-width: 528px;
-    max-height: 581px;
+    max-width: 450px;
+    max-height: 609px;
     padding: 40px;
 
     position: relative;
@@ -20,6 +20,11 @@
     /* параметри для НЕвидимої модалки */
     .backdrop.is-hidden & {
         transform: scale(0.8);
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 528px;
+        max-height: 581px;
     }
 }
 
@@ -38,4 +43,10 @@
     color: var(--color-primary);
 
     margin-bottom: 12px;
+
+    @media screen and (max-width: 1199px) {
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
