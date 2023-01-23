@@ -52,7 +52,6 @@
 
 .mobile-menu__item:not(:last-child) {
      margin-bottom: 32px;
-     display: flex;
  }
 
 .mobile-menu__link {
@@ -103,7 +102,7 @@
 
 .modal-menu__socials-list {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     @media screen and (max-width: 425px) {
       flex-wrap: wrap;
     }
@@ -112,7 +111,7 @@
 .modal-menu__socials-item {
     @media screen and (max-width: 425px) {
         flex-basis: calc((100% - 20px)/2);
-        }
+        }      
 }
 
 .modal-menu__socials-link {
@@ -122,8 +121,16 @@
     line-height: 1,222;
     letter-spacing: 0.02em;
     color: var(--color-accent);
+    display: block;
+    padding-right: 10px;
+    position: relative;
 }
 
-
-
+.modal-menu__link-line::after {
+    content: '';
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    position: absolute;
+    right: 0;
+}
 

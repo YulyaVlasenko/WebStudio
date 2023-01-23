@@ -1,17 +1,23 @@
 .checkbox {
     display: flex;
+    align-items: baseline;
     position: relative;
 }
 
 .checkbox__label {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 1.714;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
     color: var(--color-secondary);
     margin-bottom: 0;
     position: relative;
     padding-left: 36px;
     cursor: pointer;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.714;
+    }
 }
 
 .checkbox__input {
@@ -25,7 +31,12 @@
 
     position: absolute;
     left: 13px;
-    top: 5px;
+    top: 0;
+
+    @media screen and (min-width: $desktop) {
+        top: 5px;
+    }
+    
 
     transition: fill 250ms var(--primary-cubic-bezier),
         border-color 250ms var(--primary-cubic-bezier);

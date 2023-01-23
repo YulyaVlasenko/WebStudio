@@ -2,6 +2,11 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    height: 60px;
+
+    @media screen and (min-width: $tablet) {
+            height: 80px;
+        }
 }
 
 
@@ -90,6 +95,7 @@
     display: none;
 }
 }
+
 
 
 

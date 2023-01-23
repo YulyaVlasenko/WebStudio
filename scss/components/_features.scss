@@ -32,6 +32,11 @@
     margin-bottom: 10px;
     letter-spacing: 0.03em;
     font-weight: 700;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        text-align:left;
+    }
 }
 
 .features__meta {

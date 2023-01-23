@@ -23,6 +23,8 @@
       
       @media screen and (min-width: $tablet) {
         line-height: 1.167;
+        display: flex;
+        gap: 8px;
       }
 
       @media screen and (min-width: $desktop) {
@@ -61,4 +63,21 @@
     display: none;  
 }
     fill: currentColor;
+
+  &--envelop {
+    @media screen and (min-width: $tablet) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+
+  &--smartphone {
+    @media screen and (min-width: $tablet) {
+      width: 10px;
+      height: 14px;
+    }
+  }
 }
+
+
+

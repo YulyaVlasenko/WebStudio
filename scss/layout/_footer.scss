@@ -11,17 +11,17 @@
     text-align: center;
 
     @media screen and (min-width: $desktop) {
-        @include centredFlex(baseline, space-between);
+        @include centredFlex(baseline);
         text-align: left;
     }
 
 }
 
 .footer__container-tablet {
+        margin-bottom: 60px;
     @media screen and (min-width: $tablet) {
         @include centredFlex(baseline);
         gap: 165px;
-        margin-bottom: 60px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -34,8 +34,7 @@
     margin-bottom: 20px;
 }
 
-.footer__contacts {
-  display: block;
+.footer__conteiner-element {
   margin-bottom: 60px;
   @media screen and (min-width: $tablet) {
     margin-bottom: 0px;
@@ -56,16 +55,14 @@
     margin-bottom: 20px;
 }
 
-.footer__socials {
-    margin-bottom: 60px;
-    
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 0px;
-    }
-}
-
 .footer__socials-list {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.footer__subscription-form {
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+    }
 }
 
