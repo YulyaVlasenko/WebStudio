@@ -75,7 +75,7 @@
         height: 4px;
         width: 100%;
         border-radius: 2px;
-        bottom: -1px;
+        bottom: 0;
         left: 0;
     }
 }
@@ -94,6 +94,34 @@
 @media screen and (max-width: 767px) {
     display: none;
 }
+} 
+
+.header__contacts-item:not(:last-child) {
+@media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+}
+}
+
+.header__contacts-link {
+    color: var(--color-secondary);
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    
+        @media screen and (min-width: $desktop) {
+            @include centredFlex();
+            gap: 10px;
+        }
+    
+        @media screen and (min-width: $tablet) {
+            line-height: 1.167;
+            display: flex;
+            gap: 8px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            line-height: 1.143;
+        }
 }
 
 

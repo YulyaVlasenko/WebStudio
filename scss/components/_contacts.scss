@@ -9,30 +9,6 @@
         color: var(--color-accent);
     }
 
-
-    &--header {
-        color: var(--color-secondary);
-        line-height: 1.175;
-        letter-spacing: 0.02em;
-        font-weight: 500;
-
-     @media screen and (min-width: $desktop) {
-        @include centredFlex();
-        gap: 10px;
-      }
-      
-      @media screen and (min-width: $tablet) {
-        line-height: 1.167;
-        display: flex;
-        gap: 8px;
-      }
-
-      @media screen and (min-width: $desktop) {
-        line-height: 1.143;
-      }
-
-    }
-
     &--footer {
       font-size: 14px;
       line-height: 1.714;
@@ -65,14 +41,14 @@
     fill: currentColor;
 
   &--envelop {
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: 1199px) {
       width: 14px;
       height: 10px;
     }
   }
 
   &--smartphone {
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: 1199px) {
       width: 10px;
       height: 14px;
     }
