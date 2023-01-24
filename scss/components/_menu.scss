@@ -118,10 +118,9 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1,222;
+    line-height: 1.222;
     letter-spacing: 0.02em;
     color: var(--color-accent);
-    display: block;
     padding-right: 10px;
     position: relative;
 }
@@ -129,7 +128,8 @@
 .modal-menu__link-line::after {
     content: '';
     height: 22px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
     position: absolute;
     right: 0;
 }
